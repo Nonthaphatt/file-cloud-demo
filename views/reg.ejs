@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('head') %>
+    <title>File cloud</title>
+</head>
+<body>
+    <div class="w-100">
+        <form class="w-25 mx-auto mt-5" method="POST" action="/insertregister">
+            <div class="col-auto">
+              <label for="email">Name</label>
+              <input required type="text" class="form-control" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="col-auto">
+              <label for="email">Email</label>
+              <input required type="email" class="form-control" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="col-auto">
+              <label for="inputPassword">Password</label>
+              <input required type="password" class="form-control" name="password" id="password" placeholder="Password">
+            </div>
+            <br>
+            <div class="col-auto w-100 d-flex">
+              <button type="submit" class="btn btn-primary me-4">Register</button> <h6 class="text-danger mb-0 mt-auto mb-auto"><%- text %></h6>
+            </div>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
